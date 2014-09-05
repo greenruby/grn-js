@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="greenRubyApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="greenRubyApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="greenRubyApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="greenRubyApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>GreenRuby JS Prototype</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/html5-boilerplate/normalize.css">
+  <link rel="stylesheet" href="css/html5-boilerplate/main.css">
+  <link rel="stylesheet" href="css/greenruby.css"/>
+</head>
+<body ng-controller="IssueCtrl">
+<h1>Green Ruby News</h1>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div class="side-left">
+  <input ng-model="query">
+    <ul>
+      <li ng-repeat="issue in issues">
+        <a href="#issue/{{issue.id}}">{{issue.id}} <span>{{issue.date}}</span></a>
+      <li>
+    </ul>
+  </div>
+  <div class="main">
+  <h1>#{{current_issue.id}} - {{current_issue.date}}</h1>
+  <h2>Edito</h2>
+  <p>
+    {{current_issue.edito}}
+  </p>
+  <h3>Look</h3>
+  <p>Examples of UI/UX, graphic performance, web design and flashy things.</p>
+  <ul>
+    <li ng-repeat="story in stories|filter:query"><a href="{{story.link}}">{{story.title}}</a>
+      <p>{{story.description}}</p>
+    </li>
+  </ul>
+  </div>
+  <script src="js/angular.js"></script>
+  <script src="js/controllers.js"></script>
+</body>
+</html>
