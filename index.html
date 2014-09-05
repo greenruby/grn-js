@@ -22,20 +22,23 @@
   <input ng-model="query">
     <ul>
       <li ng-repeat="issue in issues">
-        <a href="#issue/{{issue.id}}">{{issue.id}} <span>{{issue.date}}</span></a>
+        <a href="#" ng-click="stories_filters.issue=issue.id;issues_filters.id=issue.id">{{issue.id}} <span>{{issue.date}}</span></a>
       <li>
     </ul>
+      {{issue_filter}}
   </div>
   <div class="main">
-  <h1>#{{current_issue.id}} - {{current_issue.date}}</h1>
+  <div ng-repeat="issue in issues|filter:issues_filters">
+  <h1>#{{issue.id}} - {{issue.date}}</h1>
   <h2>Edito</h2>
   <p>
-    {{current_issue.edito}}
+    {{issue.edito}}
   </p>
+  </div>
   <h3>Look</h3>
   <p>Examples of UI/UX, graphic performance, web design and flashy things.</p>
   <ul>
-    <li ng-repeat="story in stories|filter:query"><a href="{{story.link}}">{{story.title}}</a>
+    <li ng-repeat="story in stories|filter:query|filter:stories_filters"><a href="{{story.link}}">{{story.title}}</a>
       <p>{{story.description}}</p>
     </li>
   </ul>

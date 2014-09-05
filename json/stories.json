@@ -25,7 +25,7 @@
         "link": "http://www.opsschool.org/en/latest/",
         "description": "Comprehensive program to become an operations engineer, community written.",
         "category": "use",
-        "subject":"ops",
+        "subject": "ops",
         "issue": 82
     },
     {
@@ -33,7 +33,7 @@
         "link": "https://gitenberg.github.io/",
         "description": "43,000 book in this git-powered version of project Gutenberg.",
         "category": "use",
-        "subject":"tool",
+        "subject": "tool",
         "issue": 82
     },
     {
@@ -41,7 +41,7 @@
         "link": "https://railsdeploymentbook.com/",
         "description": "(book) deploy your Rails applications using Chef, RVM, Nginx, Unicorn, and Vagrant.",
         "category": "use",
-        "subject":"ruby",
+        "subject": "ruby",
         "issue": 82
     },
     {
@@ -70,7 +70,7 @@
         "link": "https://www.omniref.com/",
         "description": "The Universal Ruby Reference.",
         "category": "use",
-        "subject":"ruby",
+        "subject": "ruby",
         "issue": 81
     },
     {
@@ -78,7 +78,7 @@
         "link": "http://www.tenleaves.com/paths/thinking-in-js",
         "description": "Steps to take for going further the js basics.",
         "category": "use",
-        "subject":"js",
+        "subject": "js",
         "issue": 81
     },
     {
@@ -86,7 +86,7 @@
         "link": "http://visual.is/",
         "description": "Present information dynamically with dashboards, reports, and data presentations.",
         "category": "use",
-        "subject":"tool",
+        "subject": "tool",
         "issue": 81
-    },
+    }
 ]
