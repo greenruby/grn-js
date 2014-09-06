@@ -17,7 +17,7 @@
   </div>
   <div ng-repeat="category in categories">
     <h3>{{category.title}}</h3>
-    <p>
+    <p ng-hide="{{category.description == undefined}}">
       {{category.description}}
     </p>
     <ul>

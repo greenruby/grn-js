@@ -22,5 +22,8 @@
     {
         "title": "Listen",
         "description": "What could be heard last week .."
+    },
+    {
+        "title": "Fun"
     }
 ]
