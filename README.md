@@ -35,5 +35,5 @@ Before the transition into the real templates, there is a few steps that need to
   - a possible way would be to use rewrite rules on server, to transform `/grn-081.html` into `/#issue-81` behind the scene
 - Handling the splitting between categories (look, use, etc)
 - and more that we will discuss together !
-- Add jslint for some basic js convention (@tubaxenor)
+- ~~Add jslint for some basic js convention (@tubaxenor)~~
 
