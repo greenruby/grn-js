@@ -6,12 +6,27 @@ I have tried to keep it as bare as possible to have a clear understanding of wha
 
 ## Starting The Prototype
 
+### Install node.js
+
+- Through [nvm](https://github.com/creationix/nvm) **Recommanded by @tubaxenor**
+
+- Directly download from [nodejs.org](http://nodejs.org/download/)
+
+It's better to install/use nodejs >= v0.8
+
+```
+$ npm install
+```
+
+### Launching prototype server
+
 Just do
 
 ```
-npm start
+grunt server
 ```
-to launch a local server and go to `http://localhost:8000/index.html`
+
+It should auto launch the site on your default browser, if not, go to `http://localhost:8000/index.html`
 
 ## Next Steps
 
@@ -20,3 +35,4 @@ Before the transition into the real templates, there is a few steps that need to
 * Handling the route to be able to have persistent link to specific editions, like http://greenruby.org/grn-081.html
 * Handling the splitting between categories (look, use, etc)
 * and more that we will discuss together !
+* Add jslint for some basic js convention (@tubaxenor)
