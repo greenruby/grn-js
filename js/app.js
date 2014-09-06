@@ -2,6 +2,7 @@
 
 angular.module('greenRubyApp', [
   'ngRoute',
+  'greenRubyApp.filters',
   'greenRubyApp.controllers',
 ]).config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/:issue_id', {templateUrl: 'partials/issue.html', controller: 'IssueCtrl'});

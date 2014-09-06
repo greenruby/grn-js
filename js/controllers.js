@@ -17,6 +17,9 @@ greenRubyApp.controller('IssueCtrl', ['$filter', '$scope', '$http', '$routeParam
     $scope.stories_filters = {"issue":$scope.current_issue_id};
     $scope.issues_filters = {"id":$scope.current_issue_id};
     });
+  $http.get('data/categories.json').success(function(data) {
+    $scope.categories = data;
+    });
   $http.get('data/stories.json').success(function(data) {
     $scope.stories = data;
     });

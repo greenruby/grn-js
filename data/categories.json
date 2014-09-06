@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Look",
+        "description": "Examples of UI/UX, graphic performance, web design and flashy things."
+    },
+    {
+        "title": "Use",
+        "description": "Web applications, resources and tools, available for making our life easier or funnier."
+    },
+    {
+        "title": "Install",
+        "description": "A selection of gems or applications updated during past week."
+    },
+    {
+        "title": "Read",
+        "description": "From the blogosphere or news feeds ..."
+    },
+    {
+        "title": "Watch",
+        "description": "Screencasts and conferences videos, or other video feeds ..."
+    },
+    {
+        "title": "Listen",
+        "description": "What could be heard last week .."
+    }
+]

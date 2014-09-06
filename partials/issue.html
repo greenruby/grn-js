@@ -15,11 +15,16 @@
       {{current_issue.edito}}
     </p>
   </div>
-  <h3>Look</h3>
-  <p>Examples of UI/UX, graphic performance, web design and flashy things.</p>
-  <ul>
-    <li ng-repeat="story in stories|filter:query|filter:stories_filters"><a href="{{story.link}}">{{story.title}}</a>
-      <p>{{story.description}}</p>
-    </li>
-  </ul>
+  <div ng-repeat="category in categories">
+    <h3>{{category.title}}</h3>
+    <p>
+      {{category.description}}
+    </p>
+    <ul>
+      <li ng-repeat="story in stories|filter:query|issueFilter:current_issue.id|categoryFilter:category.title">
+        <a href="{{story.link}}">{{story.title}}</a>
+        <p>{{story.description}}</p>
+      </li>
+    </ul>
+  </div>
 </div>
