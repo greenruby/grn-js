@@ -1,7 +1,7 @@
 {
   "name": "greenruby-js",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "GreenRuby frontend prototype",
   "repository": "https://github.com/greenruby/grn-js",
   "license": "MIT",
