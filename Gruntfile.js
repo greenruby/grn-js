@@ -1,6 +1,5 @@
-'use strict';
-
 module.exports = function(grunt) {
+  'use strict';
 
   require('load-grunt-tasks')(grunt);
 
@@ -13,14 +12,28 @@ module.exports = function(grunt) {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
-          './*.html',
-          './css/{,*/}*.{css,png,jpg,jpeg,gif,svg}',
-          './js/{,*/}*.js',
-          './data/{,*/}*.json'
+          '*.html',
+          'css/{,*/}*.{css,png,jpg,jpeg,gif,svg}',
+          'js/{,*/}*.js',
+          'data/{,*/}*.json'
         ]
+      },
+      jshint: {
+        files: 'js/{,*/}*.js',
+        tasks: ['jshint'],
+        options: {
+          interrupt: true,
+        },
       }
     },
-
+    jshint: {
+      options: {
+        jshintrc: '.jshintrc'
+      },
+      files: {
+        src: ['./js/{,*/}*.js', './*.js', '!./js/angular.js']
+      }
+    },
     connect: {
       options: {
         port: 8000,
@@ -40,7 +53,12 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('server', [
+    'jshint',
     'connect:livereload',
     'watch'
+  ]);
+
+  grunt.registerTask('test', [
+    'jshint'
   ]);
 };
