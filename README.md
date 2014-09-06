@@ -27,6 +27,11 @@ grunt server
 
 It should auto launch the site on your default browser, if not, go to `http://localhost:8000/index.html`
 
+## Done
+
+* We have some persistent link working now : `http://localhost:8000/#/34` will redirect to issue number 34
+* I have prepared a split between the issue and the search views. It will allow us to have cleaner templates and persistent search links like `http://localhost:8000/#/search/ruby`
+
 ## Next Steps
 
 Before the transition into the real templates, there is a few steps that need to be done :
@@ -36,4 +41,3 @@ Before the transition into the real templates, there is a few steps that need to
 - Handling the splitting between categories (look, use, etc)
 - and more that we will discuss together !
 - ~~Add jslint for some basic js convention (@tubaxenor)~~
-

@@ -31,7 +31,7 @@ module.exports = function(grunt) {
         jshintrc: '.jshintrc'
       },
       files: {
-        src: ['./js/{,*/}*.js', './*.js', '!./js/angular.js']
+      src: ['./js/{,*/}*.js', './*.js', '!./js/angular.js','!./js/angular-route.js']
       }
     },
     connect: {

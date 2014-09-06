@@ -1,0 +1,25 @@
+<div class="side-left">
+<input ng-model="query">
+  <ul>
+    <li ng-repeat="issue in issues">
+      <a href="#/{{issue.id}}">{{issue.id}} <span>{{issue.date}}</span></a>
+    <li>
+  </ul>
+    {{issue_filter}}
+</div>
+<div class="main">
+  <div>
+    <h1>#{{current_issue.id}} - {{current_issue.date}}</h1>
+    <h2>Edito</h2>
+    <p>
+      {{current_issue.edito}}
+    </p>
+  </div>
+  <h3>Look</h3>
+  <p>Examples of UI/UX, graphic performance, web design and flashy things.</p>
+  <ul>
+    <li ng-repeat="story in stories|filter:query|filter:stories_filters"><a href="{{story.link}}">{{story.title}}</a>
+      <p>{{story.description}}</p>
+    </li>
+  </ul>
+</div>
