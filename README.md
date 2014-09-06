@@ -8,7 +8,7 @@ I have tried to keep it as bare as possible to have a clear understanding of wha
 
 ### Install node.js
 
-- Through [nvm](https://github.com/creationix/nvm) **Recommanded by @tubaxenor**
+- Through [nvm](https://github.com/creationix/nvm) (Recommanded by @tubaxenor)
 
 - Directly download from [nodejs.org](http://nodejs.org/download/)
 
