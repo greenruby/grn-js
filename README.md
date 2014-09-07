@@ -5,7 +5,7 @@ This is a prototype for a frontend of GreenRuby, done with Angular JS.
 We have a trello board to keep track of what we want and what is done:
 https://trello.com/b/6QXa4Jdk/grn-v2
 
-It is still an early stage of development. If you want to contribute, just send a mail to mose@greenruby.org
+It is still an early stage of development. If you want to contribute, just send a mail to mose@greenruby.org or joni us on freenode irc channel #greenruby
 
 ## Development setup
 
@@ -19,6 +19,7 @@ It's better to install/use nodejs >= v0.8
     git clone git@github.com:greenruby/grn-js.git
     cd grn-js
     npm install
+    bundle
     grunt server
 
 It should auto launch the site on your default browser, if not, go to `http://localhost:8000/index.html`
