@@ -11,19 +11,25 @@
   <div>
     <h1>#{{current_issue.id}} - {{current_issue.date}}</h1>
     <h2>Edito</h2>
-    <p>
+    <p ng-bind-html="edito">
       {{current_issue.edito}}
     </p>
   </div>
   <div ng-repeat="category in categories">
     <h3>{{category.title}}</h3>
-    <p ng-hide="{{category.description == undefined}}">
+    <div ng-hide="!category.description">
       {{category.description}}
-    </p>
+    </div>
     <ul>
       <li ng-repeat="story in stories|filter:query|issueFilter:current_issue.id|categoryFilter:category.title">
-        <a href="{{story.link}}">{{story.title}}</a>
-        <p>{{story.description}}</p>
+        <div class="rightblock">
+          <img width="16" height="16" src="icons/{{story.subject[0]}}.png" ng-hide="!story.subject[0]" />
+          <div ng-show="story.date" class="date">{{story.date}}</div>
+        </div>
+        <div class="leftblock">
+          <a href="{{story.link}}">{{story.title}}</a><span class="quantity" ng-hide="!story.quantity"> - {{story.quantity}}</span>
+          <div class="description">{{story.description}}</div>
+        </div>
       </li>
     </ul>
   </div>

@@ -12,7 +12,8 @@ module.exports = function(grunt) {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
-          '*.html',
+          '**/*.html',
+          'sass/*.{scss,sass}',
           'css/{,*/}*.{css,png,jpg,jpeg,gif,svg}',
           'js/{,*/}*.js',
           'data/{,*/}*.json'
@@ -24,6 +25,10 @@ module.exports = function(grunt) {
         options: {
           interrupt: true,
         },
+      },
+      compass: {
+        files: ['sass/*.{scss,sass}'],
+        tasks: ['compass:dev']
       }
     },
     jshint: {
@@ -32,6 +37,18 @@ module.exports = function(grunt) {
       },
       files: {
       src: ['./js/{,*/}*.js', './*.js', '!./js/angular.js','!./js/angular-route.js']
+      }
+    },
+    compass: {
+      dev: {
+        options: {
+          src: 'sass',
+          dest: 'css',
+          images: 'images',
+          relativeassets: true,
+          bundleExec: true,
+          specify: 'sass/*.{scss,sass}',
+        }
       }
     },
     connect: {
