@@ -18,7 +18,9 @@ It's better to install/use nodejs >= v0.8
 
     git clone git@github.com:greenruby/grn-js.git
     cd grn-js
+    npm install -g grunt-cli
     npm install
+    npm install --save-dev
     bundle
     grunt server
 

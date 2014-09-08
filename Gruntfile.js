@@ -44,10 +44,7 @@ module.exports = function(grunt) {
         options: {
           src: 'sass',
           dest: 'css',
-          images: 'images',
-          relativeassets: true,
-          bundleExec: true,
-          specify: 'sass/*.{scss,sass}',
+          images: 'images'
         }
       }
     },
@@ -73,6 +70,10 @@ module.exports = function(grunt) {
     'jshint',
     'connect:livereload',
     'watch'
+  ]);
+
+  grunt.registerTask('compass', [
+    'compass'
   ]);
 
   grunt.registerTask('test', [
