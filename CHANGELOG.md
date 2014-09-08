@@ -5,6 +5,7 @@ Each time you change something, keep track of it here
 
 v0.0.1 - wip
 ------------------
+- @mose - added compass and sass grunt processing
 - @qleonetti
   - added persistent link for issues
   - fixed an bug with the issue number filtering
