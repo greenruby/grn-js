@@ -50,34 +50,54 @@ a:hover {
 
 /* line 34, ../sass/style.sass */
 input {
-  border: 1px solid #666;
+  border: 1px solid #aaa;
   padding: 3px 4px;
 }
 
-/* line 38, ../sass/style.sass */
+/* line 37, ../sass/style.sass */
+.search {
+  width: 140px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  color: #999;
+  font-family: Source Code Pro, monospace;
+}
+/* line 43, ../sass/style.sass */
+.search:focus {
+  border: 1px solid #666;
+  box-shadow: 0px 0px 1px 2px #cec;
+}
+
+/* line 47, ../sass/style.sass */
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 42, ../sass/style.sass */
+/* line 51, ../sass/style.sass */
 ul li {
   margin: 0;
 }
-/* line 45, ../sass/style.sass */
+/* line 54, ../sass/style.sass */
 ul.issues a {
   font-family: Source Code Pro, monospace;
+  display: block;
 }
-/* line 47, ../sass/style.sass */
+/* line 57, ../sass/style.sass */
+ul.issues a:hover {
+  background-color: #eee;
+}
+/* line 59, ../sass/style.sass */
 ul.issues a span {
   float: right;
+  margin-top: 0.3em;
 }
-/* line 50, ../sass/style.sass */
+/* line 63, ../sass/style.sass */
 ul.stories li {
   margin: 15px 0;
 }
 
-/* line 53, ../sass/style.sass */
+/* line 66, ../sass/style.sass */
 .date {
   color: #bbb;
   font-weight: normal;

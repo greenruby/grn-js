@@ -32,8 +32,17 @@ a
     text-decoration: underline
 
 input
-  border: 1px solid #666
+  border: 1px solid #aaa
   padding: 3px 4px
+.search
+  width: 140px
+  margin-bottom: 10px
+  border-radius: 4px
+  color: #999
+  font-family: Source Code Pro, monospace
+  &:focus
+    border: 1px solid #666
+    box-shadow: 0px 0px 1px 2px #cec
 
 ul
   list-style: none
@@ -44,8 +53,12 @@ ul
   &.issues
     a
       font-family: Source Code Pro, monospace
+      display: block
+      &:hover
+        background-color: #eee
       span
         float: right
+        margin-top: .3em
   &.stories
     li
       margin: 15px 0
