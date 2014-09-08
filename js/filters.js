@@ -30,4 +30,12 @@ angular.module('greenRubyApp.filters', []).
       }
       return filtered;
     };
+  }).
+  filter('reverse', function() {
+    return function(items) {
+      if (undefined === items) {
+        return;
+      }
+      return items.slice().reverse();
+    };
   });
