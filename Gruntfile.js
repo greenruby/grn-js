@@ -55,7 +55,7 @@ module.exports = function(grunt) {
         options: {
           httpPath: '/',
           sassDir: 'sass',
-          cssDir: 'css',
+          cssDir: 'site/css',
           imagesDir: 'images',
           fontsDir: 'fonts',
           outputStyle: "compressed",
@@ -79,6 +79,14 @@ module.exports = function(grunt) {
           ]
         }
       }
+    },
+    copy: {
+      prod: {
+        files: {
+          src: ["images/*.{png,jpg,jpeg,gif,svg}"],
+          dest: "site/images/"
+        }
+      }
     }
   });
 
@@ -94,5 +102,9 @@ module.exports = function(grunt) {
 
   grunt.registerTask('test', [
     'jshint'
+  ]);
+
+  grunt.registerTask('release', [
+    'copy:prod'
   ]);
 };
