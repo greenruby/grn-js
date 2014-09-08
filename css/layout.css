@@ -1,0 +1,12 @@
+/* line 1, ../sass/layout.sass */
+.side-left {
+  float: left;
+  width: 200px;
+  margin: 0 50px;
+}
+
+/* line 5, ../sass/layout.sass */
+.main {
+  float: left;
+  width: 700px;
+}

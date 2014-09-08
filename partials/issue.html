@@ -1,6 +1,6 @@
 <div class="side-left">
 <input ng-model="query">
-  <ul>
+  <ul class="issues">
     <li ng-repeat="issue in issues">
       <a href="#/{{issue.id}}">{{issue.id}} <span>{{issue.date}}</span></a>
     <li>
@@ -9,8 +9,8 @@
 </div>
 <div class="main">
   <div>
-    <h1>#{{current_issue.id}} - {{current_issue.date}}</h1>
-    <h2>Edito</h2>
+    <h2>#{{current_issue.id}} - {{current_issue.date}}</h2>
+    <h3>Edito</h3>
     <p ng-bind-html="edito">
       {{current_issue.edito}}
     </p>
@@ -20,7 +20,7 @@
     <div ng-hide="!category.description">
       {{category.description}}
     </div>
-    <ul>
+    <ul class="stories">
       <li ng-repeat="story in stories|filter:query|issueFilter:current_issue.id|categoryFilter:category.title">
         <div class="rightblock">
           <img width="16" height="16" src="icons/{{story.subject[0]}}.png" ng-hide="!story.subject[0]" />
