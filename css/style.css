@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
+@import url(http://fonts.googleapis.com/css?family=Inder);
+/* line 6, ../sass/style.sass */
+body {
+  background-color: #fefdfe;
+  width: 100% !important;
+  -webkit-text-size-adjust: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Inder", monospace;
+}
+
+/* line 14, ../sass/style.sass */
+::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+
+/* line 17, ../sass/style.sass */
+::selection {
+  background: #000;
+  color: #f6f8fa;
+}
+
+/* line 21, ../sass/style.sass */
+a {
+  color: #393;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 25, ../sass/style.sass */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 28, ../sass/style.sass */
+input {
+  border: 1px solid #666;
+  padding: 3px 4px;
+}

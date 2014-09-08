@@ -27,7 +27,7 @@ module.exports = function(grunt) {
         },
       },
       compass: {
-        files: ['sass/*.{scss,sass}'],
+        files: 'sass/*.{scss,sass}',
         tasks: ['compass:dev']
       }
     },
@@ -42,9 +42,25 @@ module.exports = function(grunt) {
     compass: {
       dev: {
         options: {
-          src: 'sass',
-          dest: 'css',
-          images: 'images'
+          httpPath: '/',
+          sassDir: 'sass',
+          cssDir: 'css',
+          imagesDir: 'images',
+          fontsDir: 'fonts',
+          outputStyle: "expanded",
+          raw: "preferred_syntax = :sass\n"
+        }
+      },
+      prod: {
+        options: {
+          httpPath: '/',
+          sassDir: 'sass',
+          cssDir: 'css',
+          imagesDir: 'images',
+          fontsDir: 'fonts',
+          outputStyle: "compressed",
+          noLineComments: true,
+          raw: "preferred_syntax = :sass\n"
         }
       }
     },
@@ -72,8 +88,8 @@ module.exports = function(grunt) {
     'watch'
   ]);
 
-  grunt.registerTask('compass', [
-    'compass'
+  grunt.registerTask('cp', [
+    'compass:dev'
   ]);
 
   grunt.registerTask('test', [
