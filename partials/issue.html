@@ -2,14 +2,14 @@
 <input ng-model="query" class="search" placeholder="Search ...">
   <ul class="issues">
     <li ng-repeat="issue in issues|reverse">
-      <a href="#/{{issue.id}}">{{issue.id}} <span class="date">{{issue.date}}</span></a>
+      <a href="#/{{issue.id}}">{{issue.id|numberPadding:3}} <span class="date">{{issue.date}}</span></a>
     <li>
   </ul>
     {{issue_filter}}
 </div>
 <div class="main">
   <div>
-    <h2>#{{current_issue.id}} - {{current_issue.date}}</h2>
+    <h2>#{{current_issue.id|numberPadding:3}} - {{current_issue.date}}</h2>
     <h3>Edito</h3>
     <p ng-bind-html="edito">
       {{current_issue.edito}}

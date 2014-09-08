@@ -38,4 +38,16 @@ angular.module('greenRubyApp.filters', []).
       }
       return items.slice().reverse();
     };
+  }).
+  filter('numberPadding', function() {
+    return function (number, size) {
+      if (undefined === number) {
+        return;
+      }
+      var output = number + "";
+      while (output.length < size) {
+        output = "0" + output;
+      }
+      return output;
+    };
   });
