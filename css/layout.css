@@ -15,7 +15,7 @@
 .rightblock {
   position: relative;
   display: inline-block;
-  width: 50px;
+  width: 40px;
   float: left;
   text-align: right;
 }
@@ -23,5 +23,5 @@
 /* line 14, ../sass/layout.sass */
 .leftblock {
   position: relative;
-  padding-left: 60px;
+  padding-left: 50px;
 }

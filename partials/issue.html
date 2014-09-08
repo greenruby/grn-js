@@ -23,7 +23,7 @@
     <ul class="stories">
       <li ng-repeat="story in stories|filter:query|issueFilter:current_issue.id|categoryFilter:category.title">
         <div class="rightblock">
-          <img width="16" height="16" src="icons/{{story.subject[0]}}.png" ng-hide="!story.subject[0]" />
+          <img width="28" height="28" src="icons/{{story.subject[0]}}.png" ng-hide="!story.subject[0]" />
           <div ng-show="story.date" class="date">{{story.date}}</div>
         </div>
         <div class="leftblock">
