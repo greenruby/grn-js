@@ -33,44 +33,54 @@ h2 {
 }
 
 /* line 25, ../sass/style.sass */
+h3 {
+  margin: 0;
+}
+
+/* line 27, ../sass/style.sass */
 a {
   color: #393;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 29, ../sass/style.sass */
+/* line 31, ../sass/style.sass */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 32, ../sass/style.sass */
+/* line 34, ../sass/style.sass */
 input {
   border: 1px solid #666;
   padding: 3px 4px;
 }
 
-/* line 36, ../sass/style.sass */
+/* line 38, ../sass/style.sass */
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 40, ../sass/style.sass */
+/* line 42, ../sass/style.sass */
 ul li {
   margin: 0;
 }
-/* line 43, ../sass/style.sass */
+/* line 45, ../sass/style.sass */
 ul.issues a {
   font-family: Source Code Pro, monospace;
 }
-/* line 45, ../sass/style.sass */
+/* line 47, ../sass/style.sass */
 ul.issues a span {
-  color: #aaa;
-  font-weight: normal;
-  font-size: 0.8em;
   float: right;
 }
 /* line 50, ../sass/style.sass */
-ul.stories {
-  margin: 3px 0;
+ul.stories li {
+  margin: 15px 0;
+}
+
+/* line 53, ../sass/style.sass */
+.date {
+  color: #bbb;
+  font-weight: normal;
+  font-size: 0.8em;
+  line-height: 1em;
 }

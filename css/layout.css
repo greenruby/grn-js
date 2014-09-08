@@ -10,3 +10,18 @@
   float: left;
   width: 700px;
 }
+
+/* line 8, ../sass/layout.sass */
+.rightblock {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  float: left;
+  text-align: right;
+}
+
+/* line 14, ../sass/layout.sass */
+.leftblock {
+  position: relative;
+  padding-left: 80px;
+}
