@@ -82,22 +82,28 @@ ul li {
 ul.issues a {
   font-family: Source Code Pro, monospace;
   display: block;
+  padding: 0 10px;
+  margin: 0 -10px;
 }
-/* line 57, ../sass/style.sass */
+/* line 59, ../sass/style.sass */
+ul.issues a.active {
+  background-color: #eed;
+}
+/* line 61, ../sass/style.sass */
 ul.issues a:hover {
   background-color: #eee;
 }
-/* line 59, ../sass/style.sass */
+/* line 63, ../sass/style.sass */
 ul.issues a span {
   float: right;
   margin-top: 0.3em;
 }
-/* line 63, ../sass/style.sass */
+/* line 67, ../sass/style.sass */
 ul.stories li {
   margin: 15px 0;
 }
 
-/* line 66, ../sass/style.sass */
+/* line 70, ../sass/style.sass */
 .date {
   color: #bbb;
   font-weight: normal;
