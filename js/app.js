@@ -9,11 +9,3 @@ angular.module('greenRubyApp', [
   $routeProvider.when('/', {templateUrl: 'partials/issue.html', controller: 'IssueCtrl'});
   $routeProvider.otherwise({redirectTo: '/'});
 }]);
-
-function MainCtrl($scope, $location, $route) {
-  $scope.activePath = null;
-  $scope.$on('$routeChangeSuccess', function(){
-    $scope.activePath = $location.path();
-    console.log( $location.path() );
-  });
-}
