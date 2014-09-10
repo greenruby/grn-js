@@ -2,7 +2,7 @@
 
 var greenRubyApp = angular.module('greenRubyApp.controllers', []);
 
-greenRubyApp.controller('IssueCtrl', ['$filter', '$scope', '$location', '$http', '$routeParams', '$sce', function($filter, $scope, $location, $http, $routeParams, $sce) {
+greenRubyApp.controller('IssueCtrl', ['$filter', '$scope', '$http', '$routeParams', '$sce', function($filter, $scope, $http, $routeParams, $sce) {
   $http.get('data/issues.json').success(function(data) {
     $scope.params = $routeParams;
     $scope.issues = data;
