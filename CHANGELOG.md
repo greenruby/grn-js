@@ -5,6 +5,8 @@ Each time you change something, keep track of it here
 
 v0.0.1 - wip
 ------------------
+- @mose - highlight current issue in list
+- @qleonetti - reorder issues list from recent to old
 - @mose - added compass and sass grunt processing
 - @qleonetti
   - added persistent link for issues
