@@ -6,7 +6,7 @@ greenRubyApp.controller('IssueCtrl', ['$filter', '$scope', '$http', '$routeParam
   $http.get('data/issues.json').success(function(data) {
     $scope.params = $routeParams;
     $scope.issues = data;
-    $scope.current_issue_id = $scope.issues[0]["id"];
+    $scope.current_issue_id = $scope.issues[$scope.issues.length-1]["id"];
 
     if (undefined !== $routeParams.issue_id) {
       $scope.current_issue_id = parseInt($routeParams.issue_id);
