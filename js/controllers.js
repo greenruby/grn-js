@@ -22,6 +22,5 @@ greenRubyApp.controller('IssueCtrl', ['$filter', '$scope', '$http', '$routeParam
     });
   $http.get('data/stories.json').success(function(data) {
     $scope.stories = data;
-    });
-
+  });
 }]);

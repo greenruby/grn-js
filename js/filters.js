@@ -17,9 +17,12 @@ angular.module('greenRubyApp.filters', []).
     };
   }).
   filter('issueFilter', function() {
-    return function(items,issue) {
+    return function(items,issue,query) {
       if (undefined === items) {
         return;
+      }
+      if (query) {
+        return items;
       }
       var filtered = [];
       for (var i = 0; i < items.length; i++) {
