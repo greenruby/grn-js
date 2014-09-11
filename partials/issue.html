@@ -15,7 +15,7 @@
       {{current_issue.edito}}
     </p>
   </div>
-  <div ng-repeat="category in categories">
+  <div ng-repeat="category in categories" ng-show="stories|filter:query|issueFilter:current_issue.id:query|categoryFilter:category.title">
     <h3>{{category.title}}</h3>
     <div ng-hide="!category.description">
       {{category.description}}
