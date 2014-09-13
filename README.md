@@ -5,7 +5,7 @@ This is a prototype for a frontend of GreenRuby, done with Angular JS.
 We have a trello board to keep track of what we want and what is done:
 https://trello.com/b/6QXa4Jdk/grn-v2
 
-It is still an early stage of development. If you want to contribute, just send a mail to mose@greenruby.org or joni us on freenode irc channel #greenruby
+It is still an early stage of development. If you want to contribute, just send a mail to mose@greenruby.org or join us on freenode irc channel #greenruby
 
 ## Development setup
 
