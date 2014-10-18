@@ -1,12 +1,4 @@
-<div class="side-left">
-<input ng-model="query" class="search" placeholder="Search ...">
-  <ul class="issues">
-    <li ng-repeat="issue in issues|reverse">
-      <a  ng-class="{ active: current_issue_id==issue.id }" href="#/{{issue.id}}">{{issue.id|numberPadding:3}} <span class="date">{{issue.date}}</span></a>
-    <li>
-  </ul>
-    {{issue_filter}}
-</div>
+<div class="side-left" data-ng-include data-src="'partials/list.html'"></div>
 <div class="main">
   <div>
     <h2>#{{current_issue.id|numberPadding:3}} - {{current_issue.date}}</h2>
@@ -28,7 +20,7 @@
         </div>
         <div class="leftblock">
           <a href="{{story.link}}">{{story.title}}</a><span class="quantity" ng-hide="!story.quantity"> - {{story.quantity}}</span>
-          <div class="description">{{story.description}}</div>
+          <div class="description" ng-bind-html="trusted_html(story.description)"></div>
         </div>
       </li>
     </ul>

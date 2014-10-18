@@ -27,34 +27,34 @@ h1 {
   margin: 20px 50px;
 }
 
-/* line 23, ../sass/style.sass */
+/* line 24, ../sass/style.sass */
 h2 {
   margin: 0 0 20px 0;
 }
 
-/* line 25, ../sass/style.sass */
+/* line 27, ../sass/style.sass */
 h3 {
   margin: 0;
 }
 
-/* line 27, ../sass/style.sass */
+/* line 30, ../sass/style.sass */
 a {
   color: #393;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 31, ../sass/style.sass */
+/* line 34, ../sass/style.sass */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 34, ../sass/style.sass */
+/* line 37, ../sass/style.sass */
 input {
   border: 1px solid #aaa;
   padding: 3px 4px;
 }
 
-/* line 37, ../sass/style.sass */
+/* line 40, ../sass/style.sass */
 .search {
   width: 140px;
   margin-bottom: 10px;
@@ -62,51 +62,51 @@ input {
   color: #999;
   font-family: Source Code Pro, monospace;
 }
-/* line 43, ../sass/style.sass */
+/* line 46, ../sass/style.sass */
 .search:focus {
   border: 1px solid #666;
   box-shadow: 0px 0px 1px 2px #cec;
 }
 
-/* line 47, ../sass/style.sass */
+/* line 50, ../sass/style.sass */
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 51, ../sass/style.sass */
+/* line 54, ../sass/style.sass */
 ul li {
   margin: 0;
 }
-/* line 54, ../sass/style.sass */
+/* line 57, ../sass/style.sass */
 ul.issues a {
   font-family: Source Code Pro, monospace;
   display: block;
   padding: 0 10px;
   margin: 0 -10px;
 }
-/* line 59, ../sass/style.sass */
+/* line 62, ../sass/style.sass */
 ul.issues a.active {
   background-color: #eed;
 }
-/* line 61, ../sass/style.sass */
+/* line 64, ../sass/style.sass */
 ul.issues a:hover {
   background-color: #eee;
 }
-/* line 63, ../sass/style.sass */
+/* line 66, ../sass/style.sass */
 ul.issues a span {
   float: right;
   margin-top: 0.3em;
 }
-/* line 67, ../sass/style.sass */
+/* line 70, ../sass/style.sass */
 ul.stories li {
   margin: 15px 0;
 }
 
-/* line 70, ../sass/style.sass */
+/* line 73, ../sass/style.sass */
 .date {
-  color: #bbb;
+  color: #999;
   font-weight: normal;
-  font-size: 0.8em;
+  font-size: 0.75em;
   line-height: 1em;
 }

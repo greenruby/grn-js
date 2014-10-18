@@ -3,8 +3,8 @@
 var greenRubyApp = angular.module('greenRubyApp.controllers', []);
 
 greenRubyApp.controller('IssueCtrl', ['$filter', '$scope', '$http', '$routeParams', '$sce', function($filter, $scope, $http, $routeParams, $sce) {
+  $scope.params = $routeParams;
   $http.get('data/issues.json').success(function(data) {
-    $scope.params = $routeParams;
     $scope.issues = data;
     $scope.current_issue_id = $scope.issues[$scope.issues.length-1]["id"];
 
@@ -22,5 +22,9 @@ greenRubyApp.controller('IssueCtrl', ['$filter', '$scope', '$http', '$routeParam
     });
   $http.get('data/stories.json').success(function(data) {
     $scope.stories = data;
+    $scope.trusted_html = function(html_code) {
+      return $sce.trustAsHtml(html_code);
+    };
   });
 }]);
+

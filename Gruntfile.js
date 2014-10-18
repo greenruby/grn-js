@@ -105,6 +105,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('release', [
-    'copy:prod'
+    'copy:prod',
+    'compass:prod'
   ]);
 };
